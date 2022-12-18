@@ -1,7 +1,16 @@
+html {
+    min-height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
     background: #111;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 * {
@@ -14,9 +23,6 @@ h1, h3, h4 {
 
 .weather-app {
     min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #fff;
     position: relative;
     transition: 500ms;
@@ -191,12 +197,14 @@ h1, h3, h4 {
 }
 
 @media screen and (max-width: 500px) {
-    html {
+    body {
         font-size: 12px;
+        min-height: 40em;
+        height: 100%;
     }
 }
 
-@media screen and (max-height: 300px) {
+@media screen and (max-width: 300px) {
     .weather-app {
         min-height: 40em;
     }
